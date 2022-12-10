@@ -1,3 +1,7 @@
+## Liquidity
+
+- anything with a price or valuable, must have liquidity
+
 ## CEX
 
 - centralised exchanges, use an orderbook(a ledger from both a seller and a trader)

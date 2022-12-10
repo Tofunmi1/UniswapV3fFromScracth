@@ -6,15 +6,12 @@ library Position {
         uint128 liquidity;
     }
 
-    function get(
-        mapping(bytes32 => Info) storage self,
-        address owner,
-        int24 lowerTick,
-        int24 upperTick
-    ) internal view returns (Position.Info storage position) {
-        position = self[
-            keccak256(abi.encodePacked(owner, lowerTick, upperTick))
-        ];
+    function get(mapping(bytes32 => Info) storage self, address owner, int24 lowerTick, int24 upperTick)
+        internal
+        view
+        returns (Position.Info storage position)
+    {
+        position = self[keccak256(abi.encodePacked(owner, lowerTick, upperTick))];
     }
 
     function update(Info storage self, uint128 liquidityDelta) internal {
