@@ -13,6 +13,6 @@ abstract contract TestUtils {
     }
 
     function genAddress(bytes memory name) public pure returns (address _genAddress) {
-        _genAddress = address(uint160(bytes20(bytes32(keccak256(abi.encode(name))))));
+        _genAddress = address(uint160(uint256(bytes32(keccak256(abi.encode(name))))));
     }
 }

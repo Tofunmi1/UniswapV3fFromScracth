@@ -5,6 +5,7 @@ libs = ['lib']
 remappings = [
     'ds-test/=lib/forge-std/lib/ds-test/src/',
     'forge-std/=lib/forge-std/src/',
+    'prb-math/=lib/prb-math/contracts'
 ]
 
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config

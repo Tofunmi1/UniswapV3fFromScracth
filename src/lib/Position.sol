@@ -19,5 +19,6 @@ library Position {
         uint128 liquidityAfter = liquidityBefore + liquidityDelta;
 
         self.liquidity = liquidityAfter;
+    
     }
 }
