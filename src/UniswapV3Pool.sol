@@ -124,6 +124,8 @@ contract UniswapV3Pool {
         position.update(amount);
 
         Slot0 memory slot0_ = slot0;
+
+        // add liquidity at different ranges
         if (slot0_.tick < lowerTick) {
             amount0 = Math.calcAmount0Delta(
                 TickMath.getSqrtRatioAtTick(lowerTick), TickMath.getSqrtRatioAtTick(upperTick), amount
