@@ -67,7 +67,3 @@ feeGrowthOutside1X128uint256
 - new price must be calculated after each swap is executed
 - new tick must be calculated too
 
-## Todo
-
-- understand to the point of adding features to the protocol
-- this is a
